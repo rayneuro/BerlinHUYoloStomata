@@ -65,7 +65,7 @@ class OBBPredictor(DetectionPredictor):
         
             for i in range(rboxes_predict.shape[0]):
                 for j in range(8):
-                    if (rboxes_predict[i][j] <= 0 or rboxes_predict[i][j] >= 1) :
+                    if (rboxes_predict[i][j] <= 0.001 or rboxes_predict[i][j] >= 0.999) :
                         if pred[i][5] == 0.0:
                             pred[i][5] = 1.0
                         elif pred[i][5] == 2.0:
