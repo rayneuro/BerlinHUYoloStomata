@@ -1,5 +1,5 @@
-train: ./BerlinHUYoloStomata/datasets/images/train
-val: ./BerlinHUYoloStomata/datasets/images/val
+train: ./datasets/images/train
+val: ./datasets/images/val
 nc : 5
 
 
