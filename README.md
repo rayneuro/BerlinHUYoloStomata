@@ -34,6 +34,6 @@ Convert to
 - `w` , `h` : the width and height of rotated bounding box  
 - `angle` : the angle of rotate
 
-The final output file is Result.csv
+The final output file is [Name of the folder].csv
 
 

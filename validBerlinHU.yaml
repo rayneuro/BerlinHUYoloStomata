@@ -1,5 +1,5 @@
-train: ./datasets/images/train
-val: ./datasets/images/val
+train: ./validation/images/train
+val: ./validation/images/val
 nc : 5
 
 
