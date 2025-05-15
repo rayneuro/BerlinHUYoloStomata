@@ -1,19 +1,28 @@
-## How to predict the Wheat images
+## Introduction
+Based on YOLOv8 object detection framework.
+
+With Coordinate Attention for spatial awareness.
+
+Efficient batch processing for large-scale image inference.
 
 
-### Select the images folders
+
+## Detection Pipeline : How to run the detection pipeline
+### Step 1: 
+### Puts the images folders in DetectData and enter the folder name.
 
 
 ```bash
-/runs/
-└── obb/  
-    ├── [Name of the folder] 
+/DetectData/
+└── your_images_folder/  
+    ├── [ex : 001.jpg,001.png] 
+    ......
 
 ```
-You can choose the folder which contain the wheat images
 
 
-## How tp convert the Yolov8 predict .csv file to .txt
+### Step 2: 
+### convert the Yolov8 predict .csv file to .txt
 
 ### Converting YOLOv8 Predict OBB Format `.txt` Files to `.csv`
 
@@ -30,10 +39,17 @@ Where:
 
 
 Convert to
+- `class id` : The class label of the detected object.
 - `center x` , `center y` : The center of the rotated bounding box
 - `w` , `h` : the width and height of rotated bounding box  
 - `angle` : the angle of rotate
 
+Corresponds to the column in the csv file:
+`['class' ,'boundingbox_x' , 'boundingbox_y','boundingbox_width' ,'boundingbox_height' , 'angle' , 'confidence', 'File Name']`
+
 The final output file is [Name of the folder].csv
+
+
+
 
 
