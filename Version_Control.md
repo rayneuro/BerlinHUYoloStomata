@@ -18,3 +18,8 @@ Only need to run:
 2. Run Prediction
 3. Converting YOLOv8 OBB Format `.txt` Files to `.csv`
 4. Validate the model
+
+Output files:
+
+1. csv named Prediction_Results.csv under the current folder
+2. validation result is in the runs/obb/Image_Prediction
