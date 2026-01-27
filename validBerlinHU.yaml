@@ -1,7 +1,8 @@
-train: ./datasets/images/train
-val: ./datasets/images/val
-nc : 5
+path: C:/Users/oscar/Desktop/BerlinHUYoloStomata/datasets
 
+train: images/train
+val: images/val
+nc: 5
 
-names : ["complete", "incomplete","blurry.complete","blurry.incomplete","hair"]
-
+names:
+  ["complete", "incomplete", "blurry.complete", "blurry.incomplete", "hair"]
